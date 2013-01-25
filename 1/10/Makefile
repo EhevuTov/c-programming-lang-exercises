@@ -4,7 +4,7 @@ progcode	= $(progname).c
 
 test:
 	$(compiler) -o $(progname) $(progcode)
-	./$(progname)
+	cat $(progcode) | ./$(progname)
 
 clean:
 	-rm -rf $(progname)
